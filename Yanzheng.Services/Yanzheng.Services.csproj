@@ -1,5 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\Yanzheng.Data\Yanzheng.Data.csproj" />
+    <ProjectReference Include="..\Yanzheng.Domain\Yanzheng.Domain.csproj" />
+    <ProjectReference Include="..\Yanzheng.Contracts\Yanzheng.Contracts.csproj" />
+    <ProjectReference Include="..\Yanzheng.Identity\Yanzheng.Identity.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
