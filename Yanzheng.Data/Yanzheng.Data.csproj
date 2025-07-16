@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <ProjectReference Include="..\Yanzheng.Domain\Yanzheng.Domain.csproj"/>
-        <ProjectReference Include="..\Yanzheng.Identity\Yanzheng.Identity.csproj"/>
+        <ProjectReference Include="..\Yanzheng.Domain\Yanzheng.Domain.csproj" />
+        <ProjectReference Include="..\Yanzheng.Identity\Yanzheng.Identity.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
     </ItemGroup>
 
     <PropertyGroup>
