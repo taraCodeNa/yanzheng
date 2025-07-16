@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+
 // Required for IdentityUser<TKey>
 
 // Required for Guid and DateTime?
@@ -8,9 +9,10 @@ namespace Yanzheng.Identity;
 
 public class User : IdentityUser<long>
 {
-    public Guid      PublicId                 { get; init; } // Initialize with a new Guid by default
-    public required string    FirstName                { get; init; }
-    public required string    LastName                 { get; init; } // Initialize to avoid null reference warnings
+    public          Guid   PublicId  { get; init; } // Initialize with a new Guid by default
+    public required string FirstName { get; init; }
+    public required string LastName  { get; init; } // Initialize to avoid null reference warnings
+
     // ReSharper disable once PropertyCanBeMadeInitOnly.Global
     public DateTime? RefreshTokenExpiresAtUtc { get; set; }
 

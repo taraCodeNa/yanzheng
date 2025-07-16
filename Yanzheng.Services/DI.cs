@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Yanzheng.Data;
 using Yanzheng.Identity;
+
 // Reference your DbContext project
 
 // Reference your User entity project
@@ -17,8 +18,9 @@ namespace Microsoft.Extensions.DependencyInjection;
 
 public static class IdentityServiceCollectionExtensions
 {
-    public static IServiceCollection AddYanzhengDependencies(this IServiceCollection services,
-        IConfiguration                                                               configuration)
+    public static IServiceCollection AddYanzhengDependencies(
+        this IServiceCollection services,
+        IConfiguration          configuration)
     {
         // 1. Register the ApplicationDbContext
         services.AddDbContext<ApplicationDbContext>(options =>
