@@ -1,22 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <ProjectReference Include="..\Yanzheng.Data\Yanzheng.Data.csproj" />
-    <ProjectReference Include="..\Yanzheng.Domain\Yanzheng.Domain.csproj" />
-    <ProjectReference Include="..\Yanzheng.Contracts\Yanzheng.Contracts.csproj" />
-    <ProjectReference Include="..\Yanzheng.Identity\Yanzheng.Identity.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Yanzheng.Data\Yanzheng.Data.csproj"/>
+        <ProjectReference Include="..\Yanzheng.Domain\Yanzheng.Domain.csproj"/>
+        <ProjectReference Include="..\Yanzheng.Contracts\Yanzheng.Contracts.csproj"/>
+        <ProjectReference Include="..\Yanzheng.Identity\Yanzheng.Identity.csproj"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
-    <FrameworkReference Include="Microsoft.AspNetCore.App"/>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.7"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7"/>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
 </Project>

@@ -15,7 +15,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
         base.OnModelCreating(builder);
 
         builder.Entity<User>(entity =>
-        {   
+        {
             entity.ToTable("Users", IdentitySchema);
 
             entity.HasIndex(e => e.PublicId).IsUnique();
@@ -24,7 +24,7 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
             builder.Entity<User>().Property(u => u.LastName);
             builder.Entity<User>().Property(u => u.RowVersion).IsRowVersion().IsRequired(false);
         });
-        
+
         builder.Entity<IdentityRole<long>>().ToTable("Roles", IdentitySchema);
         builder.Entity<IdentityUserClaim<long>>().ToTable("UserClaims", IdentitySchema);
         builder.Entity<IdentityUserRole<long>>().ToTable("UserRoles", IdentitySchema);
